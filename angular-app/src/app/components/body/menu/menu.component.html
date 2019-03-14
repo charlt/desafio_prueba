@@ -1,0 +1,9 @@
+<div class="col s12 m4 l3">
+    <ul class="collapsible">
+        <li *ngFor="let coin of coins ">
+          <div class="collapsible-header" *ngIf="coin.id % 2 == 0">
+             <a [routerLink]="['/detail',coin.id]"> {{coin.id}} || {{coin.name}}
+                <span class=" badge"><i class="material-icons">launch</i></span></a></div>
+        </li>
+      </ul>
+</div>
